@@ -10,6 +10,7 @@
  * G H h I i J L n O o P q r S t U u Y
  * Special symbols:
  * _ - = [ ] " ' . ,
+ * Space
  * 
  * 7-segment & 74hc595 wiring:
  * msb_first = true:
@@ -64,5 +65,7 @@ void loop()
     sevseg_print(&sevseg, '=');
     delay(500);
     sevseg_print(&sevseg, '_');
+    delay(500);
+    sevseg_print(&sevseg, ' '); //printing a space
     delay(2000);
 }

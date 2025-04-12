@@ -128,6 +128,7 @@ bool sevseg_print(sevseg_t *local, char symbol)
             case /*'''*/39: code = sevseg_arr[40]; break;
             case '.': code = sevseg_arr[41]; break;
             case ',': code = sevseg_arr[42]; break;
+            case ' ': code = 0; break;
             default: code = 0b00000001; correct_symbol = false;
         }
     }
